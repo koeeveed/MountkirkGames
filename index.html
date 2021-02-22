@@ -8,8 +8,8 @@
         <script src="jquery.js"></script>
         <script src="maze.js"></script>
       // Add retro arcade music       
-        <audio controls loop autoplay src="retro_music.mp3" type ="audio/mp3"">Your browser does not support Html5</audio>
-      // <audio loop autoplay src="retro_music.mp3" type ="audio/mp3"">Your browser does not support Html5</audio>
+      // <audio controls loop autoplay src="retro_music.mp3" type ="audio/mp3"">Your browser does not support Html5</audio>
+        <audio loop autoplay src="retro_music.mp3" type ="audio/mp3">Your browser does not support Html5</audio>
         
         <script>
 
@@ -108,10 +108,12 @@
                 light.position.set(1, 1, 1.3);
                 scene.add(light);
                 
-                // Add the music.
-                window.addEventListener("DOMContentLoaded", event => { const audio = document.querySelector("audio");
+                // Add the music.               
+                window.addEventListener("DOMContentLoaded", event => {
+                const audio = document.querySelector("audio");
                 audio.volume = 0.2;
-                audio.play();} );
+                audio.play();
+                });
                 
                 // Add the ball.
                 g = new THREE.SphereGeometry(ballRadius, 32, 16);

@@ -8,7 +8,7 @@
         <script src="jquery.js"></script>
         <script src="maze.js"></script>
       // Add retro arcade music       
-        <audio controls autoplay>
+        <audio autoplay>
             <source src="retro_music.mp3" type="audio/mpeg">
         </audio>
 
@@ -109,7 +109,7 @@
                 light.position.set(1, 1, 1.3);
                 scene.add(light);
                 
-                // Add the music
+                // Add the music.
                 window.addEventListener("DOMContentLoaded", event => { const audio = document.querySelector("audio");
                 audio.volume = 0.2;
                 audio.play();} );
